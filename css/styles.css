@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+
+:root {
+    --colorTextSecondary: floralwhite;
+
+    --colorPrimary: #20408A;
+    --colorSecondary: #A9ABAE;
+    --colorTertiary: whitesmoke;
+
+    --fontMain: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontMain);
+}
+
+header {
+    padding: 0.5rem 0 0.5rem 2rem;
+    color: var(--colorTextSecondary);
+    background-color: var(--colorPrimary);
+}
+
+main {
+    padding: 0.5rem 1rem;
+    line-height: 1.4rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.25rem 0 0.25rem 0;
+    color: var(--colorTextSecondary);
+    background-color: var(--colorPrimary);
+    text-align: center;
+}
+
+input[type="text"] {
+    text-align: right;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    border: thin solid var(--colorSecondary);
+    color: var(--colorPrimary);
+    background-color: var(--colorTertiary);
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-family: var(--fontMain);
+    font-size: 1.2rem;
+    &:hover {
+        background-color: var(--colorSecondary);
+        cursor: pointer;
+    }
+    &:active {
+        background-color: var(--colorTextSecondary);
+        user-select: none;
+    }
+}
+
+div#results {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--colorSecondary);    
+    font-weight: bold;
+}
